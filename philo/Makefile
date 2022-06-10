@@ -6,7 +6,7 @@ OBJB = $(SRCB:.c=.o)
 
 NAME = philo
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 all : $(NAME)
 $(NAME) : ${OBJM} philo.h

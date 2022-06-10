@@ -6,7 +6,7 @@
 /*   By: smazouz <smazouz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 14:14:45 by smazouz           #+#    #+#             */
-/*   Updated: 2022/05/09 14:28:26 by smazouz          ###   ########.fr       */
+/*   Updated: 2022/06/10 09:13:40 by smazouz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	printf_msg_utils(t_philo *p, int type)
 {
 	pthread_mutex_t	print;
 
+	pthread_mutex_init(&print, NULL);
 	if (type == 3)
 	{
 		pthread_mutex_lock(&print);

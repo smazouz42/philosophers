@@ -6,7 +6,7 @@
 /*   By: smazouz <smazouz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 16:57:12 by smazouz           #+#    #+#             */
-/*   Updated: 2022/05/09 13:51:52 by smazouz          ###   ########.fr       */
+/*   Updated: 2022/06/10 09:07:28 by smazouz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_usleep(size_t time, size_t start_time)
 	sleep_time = time * 0.94;
 	usleep(sleep_time);
 	while (get_time() < (start_time + (time / 1000)))
-		usleep(100);
+		usleep(50);
 }
 
 void	ft_philos_creat(t_philos_inf *philo_inf, t_philo *philo, char **av)
